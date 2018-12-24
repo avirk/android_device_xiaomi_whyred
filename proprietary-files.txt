@@ -1197,6 +1197,12 @@ vendor/lib64/libvpphvx.so|e4bc7b7e5b9f3e40b24a2bb498883e9bff55622c
 vendor/lib64/libvpptestutils.so|2f141f08570013cd3004550753d3a1c9fae8cbee
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so|8e39a979aac1aa7002ef4e50c74878177ee755f7
 
+# Mlipay
+etc/init/vendor.xiaomi.hardware.mlipay@1.0-service.rc:vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.0-service.rc
+lib64/vendor.xiaomi.hardware.mlipay@1.0.so:vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
+vendor/bin/mlipayd
+vendor/lib64/libmlipay.so
+
 # Perf - from MI 8 Lite platina-user 9 PKQ1.181007.001 8.12.13 release-keys
 vendor/bin/energy-awareness|c1ad0ec1e4171b59f166e580ef8ce7395ccb41a5
 vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
