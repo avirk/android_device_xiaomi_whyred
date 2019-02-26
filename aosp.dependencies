@@ -1,0 +1,21 @@
+[
+  {
+    "remote": "github",
+    "repository": "AOSiP-Devices/kernel_xiaomi_sdm660",
+    "target_path": "kernel/xiaomi/sdm660",
+    "branch": "pie",
+    "clone-depth": "1"
+  },
+  {
+    "remote": "github",
+    "repository": "AOSiP-Devices/proprietary_vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch": "pie",
+    "clone-depth": "1"
+  },
+  {
+    "repository": "PixelExperience-Devices/vendor_MiuiCamera",
+    "target_path": "vendor/MiuiCamera",
+    "branch": "pie-whyred"
+  }
+]
