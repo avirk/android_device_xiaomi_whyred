@@ -23,15 +23,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
 # Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/pixeldust/configs/pixeldust_phone.mk)
 
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 2140
 
 # Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+#$(call inherit-product, vendor/MiuiCamera/config.mk)
 
-PRODUCT_NAME := aosp_whyred
+PRODUCT_NAME := pixeldust_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
@@ -47,6 +47,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
 
 TARGET_VENDOR := Xiaomi
+
+# Pixel Dust ROM package name
+PIXELDUST_VERSION := $(TARGET_PRODUCT)-pie-release-$(shell date -u +%Y%m%d-%H%M)
 
 # Set this flag in build script
 ifeq ($(CURRENT_BUILD_TYPE), gapps)
